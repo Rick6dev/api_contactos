@@ -12,7 +12,6 @@ class Contact(db.Model):
     name = db.Column(db.String(50), nullable=False)
     email = db.Column(db.String(50), nullable=False)
     phone = db.Column(db.String(11), nullable=False)
-
     # Serialización
     def serialize(self):
         return {
